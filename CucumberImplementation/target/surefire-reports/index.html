@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,  2 skipped,  1 passed</span>
+                    <span class="method-stats">3 methods,  1 skipped,  2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -105,11 +105,6 @@
                         <a href="#" class="method navigator-link" panel-name="suite-com.zoho.runner.CucumberProjectTestngRunnerTest" title="com.zoho.runner.CucumberProjectTestngRunnerTest" hash-for-method="runScenario(&quot;Login to Zoho&quot;, &quot;Login to Zoho&quot;)">runScenario("Login to Zoho", "Login to Zoho")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-com.zoho.runner.CucumberProjectTestngRunnerTest" title="com.zoho.runner.CucumberProjectTestngRunnerTest" hash-for-method="runScenario(&quot;Creation of Lead&quot;, &quot;Create and Delete Leads&quot;)">runScenario("Creation of Lead", "Create and Delete Leads")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content skipped suite-com.zoho.runner.CucumberProjectTestngRunnerTest -->
                   </li>
                   <li>
@@ -119,6 +114,11 @@
                       <a href="#" panel-name="suite-com.zoho.runner.CucumberProjectTestngRunnerTest" class="show-methods passed suite-com.zoho.runner.CucumberProjectTestngRunnerTest"> (show)</a> <!-- show-methods passed suite-com.zoho.runner.CucumberProjectTestngRunnerTest -->
                     </span>
                     <div class="method-list-content passed suite-com.zoho.runner.CucumberProjectTestngRunnerTest">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.zoho.runner.CucumberProjectTestngRunnerTest" title="com.zoho.runner.CucumberProjectTestngRunnerTest" hash-for-method="runScenario(&quot;Creation of Lead&quot;, &quot;Create and Delete Leads&quot;)">runScenario("Creation of Lead", "Create and Delete Leads")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-com.zoho.runner.CucumberProjectTestngRunnerTest" title="com.zoho.runner.CucumberProjectTestngRunnerTest" hash-for-method="runScenario(&quot;Login to Zoho&quot;, &quot;Login to Zoho&quot;)">runScenario("Login to Zoho", "Login to Zoho")</a> <!-- method navigator-link -->
@@ -158,80 +158,6 @@
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Creation of Lead&quot;, &quot;Create and Delete Leads&quot;)">
-                  </a> <!-- runScenario("Creation of Lead", "Create and Delete Leads") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Creation of Lead", "Create and Delete Leads")</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:26038
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-V123S32&apos;, ip: &apos;192.168.42.205&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at com.zoho.web.GenericConnector.openBrowser(GenericConnector.java:28)
-	at com.zoho.steps.GenericSteps.openBrowser(GenericSteps.java:53)
-	at ✽.open browser chrome(src/test/resources/com/zoho/features/lead.feature:7)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:26038
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at com.zoho.web.GenericConnector.openBrowser(GenericConnector.java:28)
-	at com.zoho.steps.GenericSteps.openBrowser(GenericSteps.java:53)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)
-	at cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:55)
-	at cucumber.runner.TestStep.run(TestStep.java:42)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)
-	at cucumber.runner.TestCase.run(TestCase.java:47)
-	at cucumber.runner.Runner.runPickle(Runner.java:44)
-	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:56)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:22)
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:606)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-	... 75 more
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-com.zoho.runner.CucumberProjectTestngRunnerTest-class-skipped -->
           <div class="suite-com.zoho.runner.CucumberProjectTestngRunnerTest-class-passed">
@@ -240,6 +166,16 @@ Caused by: java.net.ConnectException: Connection refused: connect
               <span class="class-name">com.zoho.runner.CucumberProjectTestngRunnerTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Creation of Lead&quot;, &quot;Create and Delete Leads&quot;)">
+                  </a> <!-- runScenario("Creation of Lead", "Create and Delete Leads") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Creation of Lead", "Create and Delete Leads")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;Login to Zoho&quot;, &quot;Login to Zoho&quot;)">
@@ -315,20 +251,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.zoho.runner.CucumberProjectTestngRunnerTest')
-data.setCell(0, 3, 17944);
+data.setCell(0, 3, 36001);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.zoho.runner.CucumberProjectTestngRunnerTest')
-data.setCell(1, 3, 13285);
+data.setCell(1, 3, 17982);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'com.zoho.runner.CucumberProjectTestngRunnerTest')
-data.setCell(2, 3, 13);
+data.setCell(2, 3, 25);
 window.suiteTableData['com.zoho.runner.CucumberProjectTestngRunnerTest']= { tableData: data, tableDiv: 'times-div-com.zoho.runner.CucumberProjectTestngRunnerTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 31 seconds</span>
+              <span class="suite-total-time">Total running time: 54 seconds</span>
               <div id="times-div-com.zoho.runner.CucumberProjectTestngRunnerTest">
               </div> <!-- times-div-com.zoho.runner.CucumberProjectTestngRunnerTest -->
             </div> <!-- times-div -->
@@ -339,6 +275,30 @@ return data;
             <span class="header-content">Reporter output for com.zoho.runner.CucumberProjectTestngRunnerTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">runScenario("Creation of Lead", "Create and Delete Leads")</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div "result">the runmode is Y (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">open browser chrome (PASSED : 11s)</div></span>
+                <span class="reporter-method-output"><div "result">navigate to url (PASSED : 2s)</div></span>
+                <span class="reporter-method-output"><div "result">title should be home_page_title (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I click on login_link_xpath (PASSED : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">I type username_field_id as se.leniumtraining10@gmail.com (PASSED : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">I click on login_button_css (PASSED : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">element password_field_id should be present (PASSED : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">I type password_field_id as Whizdom@2020 (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I click on login_button_css (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I click on crm_xpath (PASSED : 8s)</div></span>
+                <span class="reporter-method-output"><div "result">I click on leads_xpath (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I click on create_lead_id (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I click on submenu_leads_xpath (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I type company_id as Microsoft (PASSED : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">I type lead_lastname_id as Gates (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I click on lead_save_id (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I click on back_icon_xpath (PASSED : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">lead with name Gates should be generated (PASSED : 0s)</div></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">runScenario("Login to Zoho", "Login to Zoho")</span>
               <div class="reporter-method-output-div">
@@ -371,30 +331,6 @@ return data;
                 <span class="reporter-method-output"><div "result">login should be failure (SKIPPED)</div></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">runScenario("Creation of Lead", "Create and Delete Leads")</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><div "result">the runmode is Y (PASSED : 0s)</div></span>
-                <span class="reporter-method-output"><div "result">open browser chrome (FAILED : 12s)</div></span>
-                <span class="reporter-method-output"><div "result">navigate to url (SKIPPED)</div></span>
-                <span class="reporter-method-output"><div "result">title should be home_page_title (SKIPPED)</div></span>
-                <span class="reporter-method-output"><div "result">I click on login_link_xpath (SKIPPED)</div></span>
-                <span class="reporter-method-output"><div "result">I type username_field_id as se.leniumtraining10@gmail.com (SKIPPED)</div></span>
-                <span class="reporter-method-output"><div "result">I click on login_button_css (SKIPPED)</div></span>
-                <span class="reporter-method-output"><div "result">element password_field_id should be present (SKIPPED)</div></span>
-                <span class="reporter-method-output"><div "result">I type password_field_id as Whizdom@2020 (SKIPPED)</div></span>
-                <span class="reporter-method-output"><div "result">I click on login_button_css (SKIPPED)</div></span>
-                <span class="reporter-method-output"><div "result">I click on crm_xpath (SKIPPED)</div></span>
-                <span class="reporter-method-output"><div "result">I click on leads_xpath (SKIPPED)</div></span>
-                <span class="reporter-method-output"><div "result">I click on create_lead_id (SKIPPED)</div></span>
-                <span class="reporter-method-output"><div "result">I click on submenu_leads_xpath (SKIPPED)</div></span>
-                <span class="reporter-method-output"><div "result">I type company_id as Microsoft (SKIPPED)</div></span>
-                <span class="reporter-method-output"><div "result">I type lead_lastname_id as Gates (SKIPPED)</div></span>
-                <span class="reporter-method-output"><div "result">I click on lead_save_id (SKIPPED)</div></span>
-                <span class="reporter-method-output"><div "result">I click on back_icon_xpath (SKIPPED)</div></span>
-                <span class="reporter-method-output"><div "result">lead with name Gates should be generated (SKIPPED)</div></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-com.zoho.runner.CucumberProjectTestngRunnerTest" class="panel">
@@ -417,19 +353,19 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Creation of Lead", "Create and Delete Leads")</span>
-                <span class="method-start">324 ms</span>
+                <span class="method-start">305 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login to Zoho", "Login to Zoho")</span>
-                <span class="method-start">13610 ms</span>
+                <span class="method-start">36309 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login to Zoho", "Login to Zoho")</span>
-                <span class="method-start">31555 ms</span>
+                <span class="method-start">54292 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">31569 ms</span>
+                <span class="method-start">54318 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
